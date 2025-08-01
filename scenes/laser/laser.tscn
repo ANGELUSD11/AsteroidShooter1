@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://cl4if3s2mvglr"]
+
+[ext_resource type="Script" uid="uid://ba1eijkepinvs" path="res://scenes/laser/laser.gd" id="1_j8ec3"]
+[ext_resource type="Texture2D" uid="uid://c4dn1o0nljvkv" path="res://assets/assets/sprites/laser.png" id="2_kfde8"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_bx1b7"]
+a = Vector2(23.3333, 10)
+b = Vector2(0.666667, 10)
+
+[sub_resource type="GDScript" id="GDScript_d2mtc"]
+
+[node name="Laser" type="Area2D"]
+script = ExtResource("1_j8ec3")
+speed = 1000
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(52, 352)
+rotation = 1.57307
+texture = ExtResource("2_kfde8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(16, 322)
+scale = Vector2(3, 3)
+shape = SubResource("SegmentShape2D_bx1b7")
+script = SubResource("GDScript_d2mtc")

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://doj5rkf2qsh6r"]
+
+[ext_resource type="Texture2D" uid="uid://dypuia5wo41if" path="res://assets/assets/sprites/rock-medium.png" id="1_5f0el"]
+[ext_resource type="Script" uid="uid://5juae4gd1lhp" path="res://scenes/asteroids/asteroids.gd" id="1_nnmk3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nnmk3"]
+radius = 53.0
+
+[node name="MediumAsteroid" type="Area2D"]
+script = ExtResource("1_nnmk3")
+speed = 250
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_5f0el")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 0)
+rotation = 0.785398
+shape = SubResource("CircleShape2D_nnmk3")
