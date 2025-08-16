@@ -11,7 +11,8 @@ script/source = "extends CollisionShape2D
 "
 
 [node name="BigAsteroid" type="Area2D"]
-position = Vector2(1043, 82)
+position = Vector2(566, 165)
+scale = Vector2(0.314261, 0.322195)
 script = ExtResource("1_y2s20")
 metadata/_edit_group_ = true
 

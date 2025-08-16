@@ -8,7 +8,6 @@ radius = 32.0
 
 [node name="SmallAsteroid" type="Area2D"]
 script = ExtResource("1_kfbcv")
-speed = 300
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_ckhff")

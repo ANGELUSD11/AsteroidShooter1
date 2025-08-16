@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var speed = 200
+var speed = randi_range(150, 300)
 	
 func _process(delta: float) -> void:
 	position.x -= speed * delta
